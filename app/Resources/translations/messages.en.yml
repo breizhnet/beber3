@@ -1,0 +1,26 @@
+site:
+    titre: Béber's World
+    welcome: Welcome to
+
+ocean:
+    titre:
+        index: Oceans List
+        edit: Edit informations
+        show: Information about ocean
+        create: Create new ocean
+    form:
+        label:
+            name: Ocean's name
+            temperature: Temperature
+    table:
+        th:
+            id: Id
+            name: "Ocean's name"
+            temperature: Température in °C
+            actions: Actions
+    actions:
+        show: Show
+        edit: Edit
+        delete: Delete
+        create: Create new ocean
+        back: Back to index

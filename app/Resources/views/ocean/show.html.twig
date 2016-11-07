@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ 'ocean.titre.show'|trans }}</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>{{ 'ocean.table.th.id'|trans }}</th>
+                <td>{{ ocean.id }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'ocean.table.th.name'|trans }}</th>
+                <td>{{ ocean.name }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'ocean.table.th.temperature'|trans }}</th>
+                <td>{{ ocean.temperature }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('ocean_index') }}">{{ 'ocean.actions.back'|trans }}</a>
+        </li>
+        <li>
+            <a href="{{ path('ocean_edit', { 'id': ocean.id }) }}">{{ 'ocean.actions.edit'|trans }}</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+            <button type="submit">{{ 'ocean.actions.delete'|trans }}</button>
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

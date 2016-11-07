@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+
+                <h1><span>{{ 'site.welcome'|trans }}</span> {{ 'site.titre'|trans }}</h1>
+                <ul>
+                    {% for ocean in oceans %}
+                        <li>{{ ocean.name }} - {{ ocean.temperature }} °C</li>
+
+                    {% endfor %}
+                </ul>
+
+
+{% endblock %}
+

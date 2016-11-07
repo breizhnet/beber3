@@ -1,0 +1,25 @@
+site:
+    titre: Le Monde de Béber
+    welcome: Bienvenue dans
+ocean:
+    titre:
+        index: Liste des océans
+        edit: Modifier les informations
+        show: Détails de l'océan
+        create: Créer un nouvel océan
+    form:
+        label:
+            name: "Nom de l'océan"
+            temperature: Temperature
+    table:
+        th:
+            id: Id
+            name: "Nom de l'océan"
+            temperature: Température en °C
+            actions: Actions
+    actions:
+        show: Voir
+        edit: Modifier
+        delete: Supprimer
+        create: Créer un nouvel océan
+        back: Retour à l'index
